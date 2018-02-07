@@ -21,11 +21,11 @@ function start() {
         default:
             handlers.error(request, response);
     }
-  }
+}
 
   http.createServer(onRequest).listen(9000);
-
-  console.log("Uruchomiono serwer!".green);
 }
+  console.log("Uruchomiono serwer!".green);
+
 
 exports.start = start;
